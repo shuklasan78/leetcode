@@ -2,3 +2,9 @@ https://github.com/varunu28/LeetCode-Java-Solutions
 
 
 https://github.com/gouthampradhan/leetcode
+
+
+https://github.com/franklingu/leetcode-solutions
+
+https://github.com/andavid/leetcode-java
+

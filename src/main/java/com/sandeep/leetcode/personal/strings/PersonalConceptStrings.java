@@ -1,5 +1,7 @@
 package com.sandeep.leetcode.personal.strings;
 
+import java.util.HashMap;
+
 public class PersonalConceptStrings {
   public static void main(String[] args) {
         String palindrome = "121";
@@ -110,7 +112,7 @@ public class PersonalConceptStrings {
 
         // already visited character.
         HashMap<Character,
-                        Integer> pos = new HashMap<Character,
+                                Integer> pos = new HashMap<Character,
                 Integer>();
 
         // Last occurrence of first
