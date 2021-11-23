@@ -55,6 +55,22 @@ public class ArraysLeetCodeEasyAntDavid {
         return tail;
     }
 
+    static void reverse(int a[], int n)
+    {
+        int i, k, t;
+        for (i = 0; i < n / 2; i++) {
+            t = a[i];
+            a[i] = a[n - i - 1];
+            a[n - i - 1] = t;
+        }
+
+        // printing the reversed array
+        System.out.println("Reversed array is: \n");
+        for (k = 0; k < n; k++) {
+            System.out.println(a[k]);
+        }
+    }
+
     private static void rotate(int[] nums, int k) {
         //https://leetcode.com/problems/rotate-array/
         int n = nums.length;
