@@ -5,16 +5,30 @@ import java.util.*;
 public class LeetCodeStringProlems {
 
     public static void main(String[] args) {
-        System.out.println(FirstUniqueCharacterInAString("likeleetcode"));
-        System.out.println(repeatedSubstringPattern("ababa"));
-        System.out.println(reverseWords("  the     sky is blue"));
-        System.out.println(myAtoi("2147483649 fgdgfd"));
-        //fullJustify(String[] words, int L)
+
+        firstFive();
+       // secondFive();
+       // thirdFive();
+    }
+
+    private static void firstFive() {
+       // System.out.println(FirstUniqueCharacterInAString("lleetcode"));
+        //System.out.println(repeatedSubstringPattern("ababa"));
+        //System.out.println(reverseWords("  the     sky is blue"));
+        //System.out.println(myAtoi("2147483649 fgdgfd"));
+        String[] words = {"This", "is", "an", "example", "of", "text", "justification."};
+        int maxWidth = 16;
+        fullJustify(words,  maxWidth);
+    }
+    private static void secondFive() {
         System.out.println(zigZagConvert("PAYPALISHIRING", 5));
         System.out.println(compareVersion("1.11.1", "1.11"));
         System.out.println(isPalindrome("9891 "));
         System.out.println(validPalindrome("9891"));
         System.out.println(isIsomorphic("abcd", "dear"));
+    }
+
+    private static void thirdFive() {
         char[] A = {'a', 'a', 'b', 'b', 'c', 'c', 'c'};
         System.out.println(compress(A));
         String[] B = {"abc", "a", "adkd"};
@@ -24,8 +38,25 @@ public class LeetCodeStringProlems {
         System.out.println(rotateString("abcde", "cdeab"));
         System.out.println(reverseStr("abcdefg", 2));
     }
+    // Source : https://leetcode.com/problems/first-unique-character-in-a-string/
+// Author : Hao Chen
+// Date   : 2016-08-23
 
-
+    /***************************************************************************************
+     *
+     * Given a string, find the first non-repeating character in it and return it's index.
+     * If it doesn't exist, return -1.
+     *
+     * Examples:
+     *
+     * s = "leetcode"
+     * return 0.
+     *
+     * s = "loveleetcode",
+     * return 2.
+     *
+     * Note: You may assume the string contain only lowercase letters.
+     ***************************************************************************************/
     private static int FirstUniqueCharacterInAString(String s) {
 
         int[] CHAR = new int[256];

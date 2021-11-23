@@ -4,8 +4,8 @@ public class PersonalConceptArrays {
     public static void main(String[] args) {
 
         //loopTwoDimentionalArray();
-        loopThreeDimensionalArray();
-        //loopThreeDimensionalArray2();
+        //loopThreeDimensionalArray();
+        loopThreeDimensionalArray2();
     }
 
     private static void loopThreeDimensionalArray2() {
@@ -13,7 +13,8 @@ public class PersonalConceptArrays {
                 {
                         {34,67,43},
                         {576,697,423},
-                        {576,587,90}
+                        {576,587,90},
+                        {12,21,16,8}
                 },
                 {
                         {39,47,33},
@@ -21,9 +22,12 @@ public class PersonalConceptArrays {
                         {57,69,42}
                 },
         };
+        System.out.println("The size of the arrays is :"+arr.length);
         for(int i=0; i<=0; i++){
             for(int j=0; j<=0; j++){
+                System.out.println("The length of internal arrays :"+arr[i].length);
                 for(int k=0; k<=2; k++){
+                    System.out.println("The length very inside arays :"+arr[i][k].length);
                     System.out.println(arr[i][j][k]);
                 }
             }

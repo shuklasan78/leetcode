@@ -7,7 +7,7 @@ public class SumProblem {
     public static void main(String[] args) {
         //twoSumProblem();
         //threeSumZeroProblem();
-        //twoSumZeroProblem();
+        twoSumZeroProblem();
     }
 
     private static int[] twoSumProblem() {
@@ -18,7 +18,9 @@ public class SumProblem {
         for( int i =0 ; i< nums.length ;i++) {
             int complement = target - nums[i];
             if(myMap.containsKey(complement)) {
-                System.out.println(myMap.get(complement)+"   "+i);
+                int mapKy = myMap.get(complement);
+                int val = i;
+                System.out.println(mapKy+" =  "+i);
                 //store the value in array
                 int[] arr = {myMap.get(complement),i};
                 return arr;

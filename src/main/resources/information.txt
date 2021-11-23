@@ -8,3 +8,13 @@ https://github.com/franklingu/leetcode-solutions
 
 https://github.com/andavid/leetcode-java
 
+
+
+
+https://github.com/ausshadu/hackerearth-solutions
+
+
+https://github.com/kshtj24/HackerEarth   //
+
+https://github.com/hncboy/LeetCode/tree/master/src/com/hncboy   - better string handling
+
