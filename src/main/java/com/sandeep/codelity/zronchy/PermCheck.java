@@ -38,7 +38,7 @@ package com.sandeep.codelity.zronchy;
  */
  
 /*1. Simple solution.*/
-class Solution {
+class PermCheck {
     public int solution(int[] A) {
         // write your code in Java SE 8
         int N = A.length;

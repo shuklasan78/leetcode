@@ -48,7 +48,7 @@ package com.sandeep.codelity.zronchy; /**
  
 import java.util.Arrays;
 
-class Solution {
+class NailingPlanks {
     public int solution(int[] A, int[] B, int[] C) {
         // the main algorithm is that getting the minimal index of nails which
         // is needed to nail every plank by using the binary search

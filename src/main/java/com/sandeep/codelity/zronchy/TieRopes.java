@@ -39,7 +39,7 @@ package com.sandeep.codelity.zronchy;
  * Elements of input arrays can be modified.
  */
 
-class Solution {
+class TieRopes {
     public int solution(int K, int[] A) {
         int N = A.length;
         int result = 0;

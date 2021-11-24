@@ -20,7 +20,7 @@ package com.sandeep.codelity.zronchy;
  * expected worst-case space complexity is O(1).
  */
 
-class Solution {
+class MinPerimeterRectangle {
     public int solution(int N) {
         int min = 1+N;
         int i=1;

@@ -41,7 +41,7 @@ package com.sandeep.codelity.zronchy;
  * Elements of input arrays can be modified.
 */
  
-class Solution {
+class MaxProfit {
     public int solution(int[] A) {
         int length = A.length;
         int maxProfit = 0;

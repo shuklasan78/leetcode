@@ -26,7 +26,7 @@ package com.sandeep.codelity.zronchy;
  * Elements of input arrays can be modified.
 */
 
-class Solution {
+class MaxSliceSum {
     public int solution(int[] A) {
         int length = A.length;
         int maxEnding = A[0];

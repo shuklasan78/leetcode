@@ -22,7 +22,7 @@ package com.sandeep.codelity.zronchy; /**
  
 /*Simple solution: O(n)*/
 import java.util.Stack;
-class Solution {
+class StoneWall {
     public int solution(int[] H) {
     	int count = 0;
     	Stack<Integer> stack = new Stack<Integer>();

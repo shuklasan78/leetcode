@@ -37,7 +37,7 @@ package com.sandeep.codelity.zronchy; /**
  */
 import java.util.Arrays;
 
-class Solution {
+class MinAbsSumOfTwo {
     public int solution(int[] A) {
         int N = A.length;
         Arrays.sort(A);

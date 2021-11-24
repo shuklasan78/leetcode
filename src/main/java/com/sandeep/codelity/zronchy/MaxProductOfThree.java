@@ -36,7 +36,7 @@ package com.sandeep.codelity.zronchy; /**
 Additionally, two negative numbers add to a positive, so by multiplying the two largest negatives with the largest positive, we get another candidate. 
 If all numbers are negative, the three largest (closest to 0) still get the largest element!*/
 import java.util.Arrays;
-class Solution {
+class MaxProductOfThree {
     public int solution(int[] A) {
         
         int[] maxes = {Integer.MIN_VALUE, Integer.MIN_VALUE, Integer.MIN_VALUE};

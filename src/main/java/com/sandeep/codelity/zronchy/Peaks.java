@@ -56,7 +56,7 @@ package com.sandeep.codelity.zronchy; /**
  */
  
 import java.util.*;
-class Solution {
+class Peaks {
   public int solution(int[] A) {
     int N = A.length;
 

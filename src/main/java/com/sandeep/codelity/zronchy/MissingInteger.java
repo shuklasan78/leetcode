@@ -21,7 +21,7 @@ package com.sandeep.codelity.zronchy;
  * Elements of input arrays can be modified.
  */
 /*1. Time complexity is O(N)*/
-class Solution {
+class MissingInteger {
 
     public int solution(int[] A) {
         boolean[] counter = new boolean[A.length + 1];

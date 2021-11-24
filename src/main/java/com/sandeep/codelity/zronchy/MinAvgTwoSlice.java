@@ -1,4 +1,5 @@
-package com.sandeep.codelity.zronchy; /**
+package com.sandeep.codelity.zronchy;
+/**
  * A non-empty zero-indexed array A consisting of N integers is given. A pair of integers (P, Q), such that 0 = P < Q < N, is called a slice of array A (notice that the slice contains at least two elements). The average of a slice (P, Q) is the sum of A[P] + A[P + 1] + ... + A[Q] divided by the length of the slice. 
  * To be precise, the average equals (A[P] + A[P + 1] + ... + A[Q]) / (Q - P + 1).
  * For example, array A such that:
@@ -34,13 +35,13 @@ package com.sandeep.codelity.zronchy; /**
  * expected worst-case time complexity is O(N);
  * expected worst-case space complexity is O(N), beyond input storage (not counting the storage required for input arguments).
  * Elements of input arrays can be modified.
- */
- 
-/*1. Solution. time complexity is O(N)*/
-The key to solve this task is these two patterns:  
-(1) There must be some slices, with length of two or three, having the minimal average value among all the slices. 
-(2) And all the longer slices with minimal average are built up with these 2-element and/or 3-element small slices.
-class Solution {
+
+ The key to solve this task is these two patterns:
+         (1) There must be some slices, with length of two or three, having the minimal average value among all the slices.
+         (2) And all the longer slices with minimal average are built up with these 2-element and/or 3-element small slices.
+ Solution. time complexity is O(N)*/
+
+class MinAvgTwoSlice {
     public int solution(int[] A) {
     
         double minAvg = 100000;

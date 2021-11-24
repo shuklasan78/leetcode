@@ -34,7 +34,7 @@ package com.sandeep.codelity.zronchy;
  */
  
 /*1. Simple solution. Time complexity is O(N)*/
-class Solution {
+class PassingCars {
     public int solution(int[] A) {
         // write your code in Java SE 8
         int countOne = 0;

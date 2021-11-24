@@ -39,7 +39,7 @@ package com.sandeep.codelity.zronchy;
  * expected worst-case time complexity is O(N*log(N+M));
  * expected worst-case space complexity is O(1), beyond input storage (not counting the storage required for input arguments).
  */
-class Solution {
+class MinMaxDivision {
     public int solution(int K, int M, int[] A) {
         int min = 0;
         int max = 0;
