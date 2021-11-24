@@ -1,4 +1,4 @@
-package com.sandeep.codelity.maths;
+package com.sandeep.codelity.mickey;
 
 public class CountSlices {
 

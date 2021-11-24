@@ -14,11 +14,13 @@ package com.sandeep.codelity.zronchy; /**
  */
  
 /*1. Only a matter of mathematics. Time complexity is O(1)*/
-int solution(int A, int B, int K) {
-    int b = B/K;
-    int a = (A > 0 ? (A - 1)/K: 0);
-    if(A == 0){
-        b++;
+class CountDiv {
+    int solution(int A, int B, int K) {
+        int b = B/K;
+        int a = (A > 0 ? (A - 1)/K: 0);
+        if(A == 0){
+            b++;
+        }
+        return b - a;
     }
-    return b - a;
 }

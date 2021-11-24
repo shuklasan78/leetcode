@@ -1,4 +1,4 @@
-package com.sandeep.codelity.sorting;
+package com.sandeep.codelity.mickey;
 
 import java.util.Arrays;
 

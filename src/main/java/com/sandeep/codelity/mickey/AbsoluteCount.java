@@ -1,4 +1,4 @@
-package com.sandeep.codelity.collections;
+package com.sandeep.codelity.mickey;
 
 import java.util.HashSet;
 import java.util.Set;

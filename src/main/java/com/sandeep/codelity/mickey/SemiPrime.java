@@ -1,4 +1,4 @@
-package com.sandeep.codelity.maths;
+package com.sandeep.codelity.mickey;
 
 /**
  * A prime is a positive integer X that has exactly two distinct divisors: 1 and X. The first few prime integers are 2, 3, 5, 7, 11 and 13.
@@ -79,15 +79,10 @@ public class SemiPrime {
         }
         return count;
     }
-
-
-}
-//Advance solutions
-class Solution {
-    public int[] solution(int N, int[] P, int[] Q) {
+    public int[] solution2(int N, int[] P, int[] Q) {
         int length = P.length;
         int[] prime = sieve(N);
-        int[] semiprime = semiprime(prime);
+        int[] semiprime = semiprime2(prime);
         int[] result = new int[length];
         int[] semiprimesAggreation = new int[N + 1];
 
@@ -101,8 +96,16 @@ class Solution {
         }
         return result;
     }
-
-    public int[] sieve(int N) {
+    public int[] semiprime2(int[] prime) {
+        int semiprime[] = new int[prime.length];
+        for (int i = 0; i < prime.length; i++) {
+            if (prime[i] == 0) continue;
+            int firstFactor = prime[i];
+            if (prime[i / firstFactor] == 0) semiprime[i] = 1;
+        }
+        return semiprime;
+    }
+    public int[] sieve2(int N) {
         int[] prime = new int[N + 1];
         for (int i = 2; i <= (double) Math.sqrt(N); i++) {
             if (prime[i] == 0) {
@@ -116,15 +119,5 @@ class Solution {
             }
         }
         return prime;
-    }
-
-    public int[] semiprime(int[] prime) {
-        int semiprime[] = new int[prime.length];
-        for (int i = 0; i < prime.length; i++) {
-            if (prime[i] == 0) continue;
-            int firstFactor = prime[i];
-            if (prime[i / firstFactor] == 0) semiprime[i] = 1;
-        }
-        return semiprime;
     }
 }

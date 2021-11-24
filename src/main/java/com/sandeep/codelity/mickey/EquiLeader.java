@@ -1,4 +1,4 @@
-package com.sandeep.codelity.collections;
+package com.sandeep.codelity.mickey;
 /**
  * A non-empty zero-indexed array A consisting of N integers is given.
  * The leader of this array is the value that occurs in more than half of the elements of A.
