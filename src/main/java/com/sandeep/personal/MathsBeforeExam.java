@@ -1,6 +1,6 @@
 package com.sandeep.personal;
 
-public class MathsExample {
+public class MathsBeforeExam {
 
     public static void main(String[] args) {
         basicMaths();
